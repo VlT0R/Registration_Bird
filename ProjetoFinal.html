@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Projeto Final</title>
+		<meta charset="UTF-8" />
+		
+		
+
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="fontawesome/css/all.min.css" />
+
+		<link rel="stylesheet" href="ProjetoFinal.css"/>
+
+		<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+
+		<script type="text/javascript" src="ProjetoFinal.js"></script>
+	</head>
+	<body>
+		<header>
+			<img src="logo1.png" height="150" />
+
+		</header>
+		<section>
+		<div class="container">
+			<div class="row">
+				<div>
+			<h1> Cadastro de Pássaros</h1>
+
+			<input type="number" id="cod" name="cod" placeholder="Digite o código do pássaro"  class="form-control"/>
+			<br>
+			<input type="text" id="nome" name="nome" placeholder="Digite o nome do pássaro"  class="form-control"/>
+			<br>
+			<input type="text" id="ordem" name="ordem" placeholder=" Digite a ordem do passaro"  class="form-control"/>
+			<br>
+			<input type="text" id="familia" name="familia" placeholder="Digite a familia do passaro" class="form-control"/>
+			<br>
+
+			<button id="btnSalvar" class="btn btn-success"> <i class="fas fa-save"></i> Registrar </button>
+
+			<button id="btnCancelar" class="btn btn-secondary"><i class="fas fa-cancel"></i> Cancelar </button>
+			
+			<br>
+			<br>
+			<br>
+				</div><!-- column-->
+				Listagem
+				<table class="table table-success table-striped">
+					<thead class="table-success">
+						<tr>
+							<th>Código</th>
+							<th>Nome</th>
+							<th>Ordem</th>
+							<th>Familia</th>
+							<th> Alterar</th>
+							<th>Excluir</th>
+						</tr>
+					</thead>
+
+					<tbody id="tbTabela">
+						
+					</tbody>
+
+				</table>
+			</div >
+
+			<div class="row mt-4"">
+				<div class="col-md-6">
+					<button id="btnAjax" class="btn btn-primary">AJAX</button>
+					<button id='btnJson' class="btn btn-primary">JSON</button>
+				</div>
+				<div class="col-md-6">
+					<div id="retornoAjax"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+			
+		
+		</section>
+	
+		<footer>
+			Projeto.
+		</footer>
+		
+
+
+	</body>
+
+</html>
